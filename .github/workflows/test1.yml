@@ -23,11 +23,11 @@ jobs:
         run: pwd
 
       - name: Wyswietl liste plikow
-        run: ls -a
+        run: ls -la
 
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
       
       - name: Wyswietl liste plikow po checkout
-        run: ls -a
+        run: ls -la
       
