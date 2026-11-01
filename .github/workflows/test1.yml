@@ -10,6 +10,7 @@ name: pierwszy_przeplyw
 on:
   schedule:
     - cron: '*/5 * * * *'
+      timezone: "Europe/Warsaw"
   workflow_dispatch:
     inputs:
       wybor_klienta:
@@ -19,7 +20,7 @@ on:
         type: choice
         options:
           - Contoso
-          - Nwtragers
+          - Nwtraders
           - Arcacorp
       nazwa_operatora:
         description: 'Podaj swoje imie i nazwisko'
